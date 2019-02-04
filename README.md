@@ -5,10 +5,10 @@ These are the exercises for the elective.
 1.  Start by forking this repo to make it your own.
     ![the fork button](gfx/fork_button.png "The Fork Button")
 
-2.  Then clone it using something like `git clone https://github.com/yourgithubhandle/js-kata-fall-2018.git`
+2.  Then clone it using something like `git clone https://github.com/jofhatkea/js-kata-spring-2019.git`
 
 3.  Everytime we change the original repository you should do a pull from our repository to grab the latest version (merging them into your own).
-    `git pull https://github.com/jofhatkea/js-kata-fall-2018.git`
+    `git pull https://github.com/jofhatkea/js-kata-spring-2019.git`
 
 ## About the Exercises
 
@@ -20,13 +20,15 @@ The easy way to read the `.md` file is by going to your repo at github.com
 
 If you spot a spelling error or have something to add, please do a pull request :-)
 
-## Suggested solutions
+## Your solutions
 
-Suggested solutions for some of the katas will be posted at https://www.youtube.com/playlist?list=PLCx1FpZ4Dtb1cx9MFzRyHDtmiloBTGZy- a few days after the due date.
+Share your solutions in our slack workspace, don't be shy
+
+You'll all learn from this :-)
 
 ## Rules and Guidelines for the Katas
 
-1. We will try to have a kata for every day in the elective
+1. We will try to add as many cool katas as we can think of
 2. Each kata should take no more than 30 minutes
 3. The katas should cover HTML, CSS, JS and/or SVG
 4. All katas should include a technical/coding perspective
