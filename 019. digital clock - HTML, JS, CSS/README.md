@@ -1,7 +1,5 @@
 # JS-KATA
 
-## Week 2, Day 4
-
 ### Digital Clock
 
 In the early days of the web - around 20 years ago - it was considered cool to have a clock on your webpage. As if

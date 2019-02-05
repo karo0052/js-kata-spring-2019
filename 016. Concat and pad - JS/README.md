@@ -1,7 +1,5 @@
 # JS-KATA
 
-## Week 1, Day 5
-
 ### Concat'n'pad
 
 This time we are only working with JavaScript. No HTML or CSS.

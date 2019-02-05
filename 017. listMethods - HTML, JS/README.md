@@ -1,7 +1,5 @@
 # JS-KATA
 
-## Week 2, Day 1
-
 ### listMethods
 
 You are going to create a function that iterates through some lists in an HTML-document

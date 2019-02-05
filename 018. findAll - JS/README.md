@@ -1,7 +1,5 @@
 # JS-KATA
 
-## Week 2, Day 2
-
 ### findAll
 
 You know how indexOf returns the position of the first occurence - in either a string or an array.
