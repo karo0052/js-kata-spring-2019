@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kata 003. Tweets</title>
+    <style>
+      .destination {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      article {
+        width: 330px;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 10px;
+      }
+      .data-date,
+      .data-location {
+        font-size: 0.8em;
+        color: rgb(77, 74, 74);
+      }
+
+      .data-tweet {
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tweets</h1>
+    <div class="destination"></div>
+    <template>
+      <article>
+        <h3 class="data-user"></h3>
+        <p class="data-date"></p>
+        <p class="data-location"></p>
+        <p class="data-tweet"></p>
+      </article>
+    </template>
+    <script>
+      "use strict";
+
+      window.addEventListener("DOMContentLoaded", init);
+
+      function init() {
+        console.log("init");
+
+        getJSON();
+      }
+      async function getJSON() {
+        console.log("getJSON");
+
+        const dataJson = await fetch(
+          "https://kea-alt-del.dk/twitter/api/?count=30"
+        );
+        const myJSON = await dataJson.json();
+
+        console.log(myJSON);
+
+        showTweets(myJSON);
+      }
+      function showTweets(myJSON) {
+        console.log("showTweets");
+
+        myJSON.statuses.forEach(showTweet);
+      }
+
+      function showTweet(tweet) {
+        console.log("showTweet");
+        console.log(tweet);
+        const clone = document.querySelector("template").cloneNode(true)
+          .content;
+        clone.querySelector(".data-user").textContent = tweet.user.screen_name;
+        clone.querySelector(".data-date").textContent = tweet.user.created_at;
+        clone.querySelector(".data-location").textContent = tweet.user.location;
+        clone.querySelector(".data-tweet").textContent = tweet.text;
+
+        document.querySelector(".destination").appendChild(clone);
+      }
+    </script>
+  </body>
+</html>
